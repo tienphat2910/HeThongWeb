@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        width: 70%;
+        margin: 10px auto;
+        background-color: white;
+        border: 1px solid #ee843d;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .header {
+        background-image: url(./background.png);
+        background-position: center;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .logo {
+        flex: 0 0 auto;
+        margin-right: 20px;
+      }
+
+      .logo img {
+        max-width: 150px;
+        height: auto;
+      }
+
+      .header-content {
+        flex: 1;
+        text-align: left;
+      }
+
+      .header-content h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+        color: white;
+      }
+
+      .header-content h2 {
+        font-size: 1.2em;
+        color: white;
+      }
+
+      .nav {
+        background-color: #aaa3a3;
+        padding: 10px;
+      }
+
+      .nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0;
+      }
+
+      .nav li {
+        margin: 0 15px;
+      }
+
+      .nav a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+
+      .nav a:hover {
+        text-decoration: underline;
+      }
+
+      .content-wrapper {
+        display: flex;
+        flex-direction: row;
+        margin: 30px auto;
+        padding: 20px;
+      }
+
+      .section {
+        flex: 3;
+        margin-right: 20px;
+      }
+
+      .section .section-content1,
+      .section .section-content2 {
+        margin-bottom: 20px;
+      }
+
+      .section .content-container {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+      }
+
+      .section .left-img1,
+      .section .left-img2 {
+        flex: 0 0 auto;
+        margin-right: 20px;
+      }
+
+      .section .left-img1 img,
+      .section .left-img2 img {
+        width: 300px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .section .section-content1,
+      .section .section-content2 {
+        flex: 1;
+      }
+
+      .section .section-content1 h3,
+      .section .section-content2 h3 {
+        font-weight: normal;
+      }
+
+      .section .section-content1 p,
+      .section .section-content2 p {
+        margin-bottom: 10px;
+      }
+
+      aside {
+        background-color: #fdf0ef;
+        padding: 20px;
+        border-left: 1px solid #ddd;
+        color: #d54b4b;
+        flex: 1;
+      }
+
+      aside h3 {
+        color: #d54b4b;
+        margin-bottom: 10px;
+      }
+
+      aside ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      aside ul li {
+        margin-bottom: 10px;
+      }
+
+      aside ul li a {
+        text-decoration: none;
+        color: #d54b4b;
+        font-weight: bold;
+      }
+
+      aside ul li a:hover {
+        text-decoration: underline;
+      }
+
+      aside p {
+        color: black;
+        margin-top: 20px;
+      }
+
+      footer {
+        background-color: #aaa3a3;
+        padding: 10px;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <img src="logo.png" alt="logo" />
+        </div>
+        <div class="header-content">
+          <h1>YOKO'S KITCHEN</h1>
+          <h2>JAPANESE COOKING CLASSES</h2>
+        </div>
+      </header>
+      <div class="nav">
+        <ul>
+          <li>
+            <a href="#home"><span style="color: black">home</span></a>
+          </li>
+          <li><a href="#classes">classes</a></li>
+          <li><a href="#catering">catering</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </div>
+      <div class="content-wrapper">
+        <div class="section">
+          <div class="content-container">
+            <div class="left-img1">
+              <img
+                src="https://images.immediate.co.uk/production/volatile/sites/30/2008/01/Cooked-pak-choi-897d927.jpg?resize=768,574"
+                alt="left-img1"
+              />
+              <p>Bok Choi</p>
+            </div>
+            <div class="section-content1">
+              <h3>Japanese Vegetarian</h3>
+              <h3 style="color: red">Five week course in London</h3>
+              <br />
+              <p>
+                A five week introduction to traditional Japanese vegetarian
+                meals, teaching you a selection of rice and noodle dishes.
+              </p>
+            </div>
+          </div>
+          <div class="content-container">
+            <div class="left-img2">
+              <img src="./teriyaki.jpg" alt="left-img2" />
+              <p>Teriyaki Sauce</p>
+            </div>
+            <div class="section-content2">
+              <h3>Sauces Masterclass</h3>
+              <h3 style="color: red">One day workshop</h3>
+              <br />
+              <p>
+                An intensive one-day course looking at how to create the most
+                delicious sauces for use in a range of Japanese cookery.
+              </p>
+            </div>
+          </div>
+        </div>
+        <aside>
+          <h3>Popular Recipes</h3>
+          <ul>
+            <li><a href="#">Yakitori (grilled chicken)</a></li>
+            <li><a href="#">Tsukune (minced chicken patties)</a></li>
+            <li><a href="#">Okonomiyaki (savory pancakes)</a></li>
+            <li><a href="#">Mizutaki (chicken stew)</a></li>
+          </ul>
+          <br />
+          <h3>Contact</h3>
+          <p>
+            Yoko's Kitchen<br />27 Redchurch Street<br />Shoreditch<br />London
+            E2 7DP
+          </p>
+        </aside>
+      </div>
+      <footer>
+        <p><i>&copy; 2021 Yoko's Kitchen</i></p>
+      </footer>
+    </div>
+  </body>
+</html>

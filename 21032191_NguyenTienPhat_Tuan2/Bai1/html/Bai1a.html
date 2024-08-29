@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai1a</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .menu {
+        width: 40%;
+        margin: 10px auto;
+        background-color: white;
+        border: 1px solid #ee843d;
+      }
+
+      h1 {
+        text-align: center;
+        color: darkred;
+        text-shadow: 0px 15px 15px;
+      }
+
+      .navigation {
+        display: flex;
+        padding: 10px;
+        margin: 0px 0px 0px 0px;
+        border-top: 1px solid black ;
+        border-bottom: 1px solid black ;    
+      }
+
+      .navigation a {
+        margin: 0 10px;
+        color: darkblue;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      /* .section {
+        margin: 20px 0;
+      } */
+
+
+      .section h2 {
+        background-color: rgb(234, 235, 187);
+        color: darkred;
+        margin: 0px 0px 0px 0px;
+      }
+
+      ul li {
+        font-size: 18px;
+        margin: 0 20px;
+      }
+
+      .veg {
+        color: red;
+      }
+
+      .back-to-top {
+        display: inline-block;
+        color: darkred;
+      }
+
+      .back-to-top:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <h1>EXAMPLE CAFE MENU</h1>
+      <div class="navigation">
+        <a href="#starter">Starter</a>
+        <a href="#main-courses">Main Courses</a>
+        <a href="#desserts">Desserts</a>
+      </div>
+      <div class="section" id="starter">
+        <h2>Starter</h2>
+        <ul>
+          <li>Chestnut and Mushroom Goujons <span class="veg">(V)</span></li>
+          <li>Goat Cheese <span class="veg">(V)</span></li>
+          <li style="color: orange;">HONEY SOY CHICKEN KEBABS <span class="veg">(V)</span></li>
+          <li>Seafood Salad <span class="veg">(V)</span></li>
+        </ul>
+        <a class="back-to-top" href="#">Back to Top</a>
+      </div>
+
+      <div class="section" id="desserts">
+        <h2>Desserts</h2>
+        <ul>
+          <li>Lemon Sorbet <span class="veg">(V)</span></li>
+          <li>Chocolate Mud Pie <span class="veg">(V)</span></li>
+          <li>Pecan Pie <span class="veg">(V)</span></li>
+          <li>
+            Selection of Fine Cheeses from Around the World
+            <span class="veg">(V)</span>
+          </li>
+        </ul>
+        <a class="back-to-top" href="#">Back to Top</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai1b</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .menu {
+        width: 80%;
+        margin: 10px auto;
+        background-color: white;
+        border: 1px solid #ee843d;
+      }
+
+      h1 {
+        text-align: center;
+        color: darkred;
+        text-shadow: 0px 15px 15px;
+      }
+
+      .navigation {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        background-color: pink;
+        color: white;
+        text-transform: uppercase;
+      }
+
+      .navigation a,
+      .navigation .search-container {
+        margin: 0 10px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        border-right: 1px solid white;
+        padding-right: 20px;
+      }
+      .navigation .search-container:last-child {
+        border-right: none; 
+      }
+      .search-container {
+        display: flex;
+        align-items: center;
+      }
+
+      .navigation input[type="search"] {
+        border: 1px solid darkblue;
+        padding: 5px;
+        border-radius: 3px;
+        margin-right: 5px;
+      }
+
+      .navigation button {
+        background-color: darkblue;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      .navigation button:hover {
+        background-color: darkred;
+      }
+
+      .section h2 {
+        background-color: rgb(234, 235, 187);
+        color: darkred;
+        margin: 0;
+        padding: 10px;
+      }
+
+      ul li {
+        font-size: 18px;
+        margin: 0 20px;
+      }
+
+      .veg {
+        color: red;
+      }
+
+      .back-to-top {
+        display: inline-block;
+        color: darkred;
+      }
+
+      .back-to-top:hover {
+        text-decoration: underline;
+      }
+
+      .home-icon {
+        font-size: 18px;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <h1>EXAMPLE CAFE MENU</h1>
+      <div class="navigation">
+        <a href="#home" class="home-icon">🏠</a>
+        <a href="#starter">Starter</a>
+        <a href="#main-courses">Main Courses</a>
+        <a href="#desserts">Desserts</a>
+        <div class="search-container">
+          <input type="search" placeholder="Search..." />
+          <button type="button">Go</button>
+        </div>
+      </div>
+      <div class="section" id="starter">
+        <h2>Starter</h2>
+        <ul>
+          <li>Chestnut and Mushroom Goujons <span class="veg">(V)</span></li>
+          <li>Goat Cheese <span class="veg">(V)</span></li>
+          <li style="color: orange">
+            HONEY SOY CHICKEN KEBABS <span class="veg">(V)</span>
+          </li>
+          <li>Seafood Salad <span class="veg">(V)</span></li>
+        </ul>
+        <a class="back-to-top" href="#">Back to Top</a>
+      </div>
+
+      <div class="section" id="desserts">
+        <h2>Desserts</h2>
+        <ul>
+          <li>Lemon Sorbet <span class="veg">(V)</span></li>
+          <li>Chocolate Mud Pie <span class="veg">(V)</span></li>
+          <li>Pecan Pie <span class="veg">(V)</span></li>
+          <li>
+            Selection of Fine Cheeses from Around the World
+            <span class="veg">(V)</span>
+          </li>
+        </ul>
+        <a class="back-to-top" href="#">Back to Top</a>
+      </div>
+    </div>
+  </body>
+</html>
