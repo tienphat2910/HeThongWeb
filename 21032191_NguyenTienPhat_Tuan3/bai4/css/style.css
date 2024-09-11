@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F9F9F9;
+    color: #5A5A5A;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 20px; */
+    border: 1px solid #ccc;
+}
+
+header {
+    border-bottom: 3px solid #cfad5e;
+    text-align: right;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #FF9900;
+}
+
+.content {
+    display: flex;
+}
+
+nav {
+    width: 25%;
+    background-color: #F4E5D1;
+    padding: 20px;
+    background: url('/21032191_NguyenTienPhat_Tuan3/bai4/img/back.jpg');
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #8f5f84;
+    font-weight: bold;
+    display: block;
+    border-bottom: 3px dotted #cfad5e;
+}
+
+main {
+    width: 75%;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+main h2 {
+    font-size: 24px;
+    color: #FF9900;
+    margin-bottom: 10px;
+}
+
+main p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.basic-materials {
+    border: 2px solid #FF9900;
+    padding: 10px;
+    margin-top: 20px;
+    width: 139%;
+}
+
+.basic-materials h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #FF9900;
+}
+
+.basic-materials ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #999;
+}
+
+.footer {
+    margin-top: 10px;
+    border-top: 3px solid #cfad5e;
+    color: #cfad5e;
+    padding-top: 10px;
+    text-align: center;
+}
