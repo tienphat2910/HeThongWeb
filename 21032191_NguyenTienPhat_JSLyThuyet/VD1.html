@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate VAT</title>
+</head>
+<body>
+    <h2>Nhập giá</h2>
+    <input type="number" id="price" placeholder="Nhập giá">
+    <button onclick="calculateVAT()">Tính</button>
+
+    <script>
+        function calculateVAT() {
+            let price = document.getElementById('price').value;
+            if(price) {
+                alert('Price + VAT = ' + (price * 1.2).toFixed(2));
+            } else {
+                alert('Please enter a valid price.');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Positive Number</title>
+</head>
+<body>
+    <h2>Enter a number</h2>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <button onclick="checkPositive()">Check</button>
+
+    <script>
+        function checkPositive() {
+            var n = document.getElementById('numberInput').value;
+            if (n > 0) {
+                alert("n là số dương");
+            } else {
+                alert("n không phải là số dương");
+            }
+        }
+    </script>
+</body>
+</html>

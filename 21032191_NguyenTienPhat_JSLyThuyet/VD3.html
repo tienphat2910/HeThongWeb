@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Tam Giác</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-size: 18px;
+        }
+
+        input {
+            font-size: 18px;
+            padding: 8px;
+            width: 150px;
+            margin-bottom: 10px;
+        }
+        h2{
+            margin-right: 10px;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 0px;
+            margin-left: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Nhập a b c</h2>
+    <label for="a">a:</label>
+    <input type="number" id="a" >
+    <br>
+    <label for="b">b:</label>
+    <input type="number" id="b" >
+    <br>
+    <label for="c">c:</label>
+    <input type="number" id="c" >
+    <br>
+    <button onclick="checkTriangle()">Check</button>
+
+    <script>
+        function checkTriangle() {
+            var a = parseFloat(document.getElementById('a').value);
+            var b = parseFloat(document.getElementById('b').value);
+            var c = parseFloat(document.getElementById('c').value);
+
+            if (a > 0 && b > 0 && c > 0) {
+                if (a == b && b == c) {
+                    alert("Tam giác đều");
+                } else if (a == b || a == c || b == c) {
+                    alert("Tam giác cân");
+                } else {
+                    alert("Tam giác thường");
+                }
+            } else {
+                alert("Các cạnh của tam giác phải là số dương.");
+            }
+        }
+    </script>
+</body>
+</html>
