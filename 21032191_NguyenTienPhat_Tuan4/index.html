@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlowerBox 360</title>
+    <style>
+      /* General Styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      /* Header */
+      header {
+        background-color: #2e4a80;
+        color: white;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      /* Modify the logo styles */
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo img {
+        width: 50px;
+        vertical-align: middle;
+      }
+
+      .logo-text {
+        margin-left: 10px;
+      }
+
+      .logo-text h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      .logo-text span {
+        font-size: 14px;
+        display: block;
+      }
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 10px 0 0 0;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      nav ul li {
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .search-bar {
+        margin-bottom: 10px;
+      }
+
+      .search-bar input {
+        padding: 5px;
+        background-color: #2e4a80;
+        color: white;
+      }
+      .search-bar input::placeholder {
+        color: white;
+      }
+      .search-bar button {
+        padding: 5px 10px;
+        background-color: #00256e;
+        color: white;
+        cursor: pointer;
+      }
+
+      /* Main Layout */
+      main {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+      }
+
+      /* Contact Info Section */
+      .contact-info {
+        flex: 2;
+        position: relative;
+      }
+      .contact-info hr {
+        width: 150%;
+        border-top: 1px dashed black;
+        margin: 20px 0;
+      }
+      .contact-info p {
+        color: #ce9e1c;
+        text-shadow: 1px 1px 6px #075c20;
+        font-style: italic;
+      }
+      .contact-info form {
+        margin-top: 20px;
+      }
+
+      .contact-info label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .contact-info .form-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+      }
+
+      .contact-info .form-group {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+      }
+
+      .contact-info .form-group:last-child {
+        margin-right: 0;
+      }
+
+      .contact-info input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        box-sizing: border-box;
+      }
+      .contact-info textarea {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin-top: 5px;
+        box-sizing: border-box;
+      }
+
+      button {
+        padding: 10px 15px;
+        background-color: #ccc;
+        color: black;
+        border: none;
+        cursor: pointer;
+      }
+
+      button[type="reset"] {
+        background-color: #ccc;
+      }
+
+      /* Store Info Section */
+      .store-info {
+        flex: 1;
+        margin-left: 20px;
+        padding-top: 0;
+        clear: both;
+      }
+
+      /* Discounts Section */
+      aside {
+        flex: 1;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      aside a {
+        text-decoration: none;
+        color: #2e4a80;
+        font-weight: bold;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        background-color: #2e4a80;
+        color: white;
+        padding: 15px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./img/flower.png" alt="FlowerBox 360 Logo" />
+        <div class="logo-text">
+          <h1>FlowerBox360</h1>
+          <span>...to get your daily dose of luxury roses!</span>
+        </div>
+      </div>
+      <nav>
+        <div class="search-bar">
+          <input type="text" placeholder="Search the site..." />
+          <button>Go</button>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Promotion</a></li>
+          <li><a href="#">Gift Baskets</a></li>
+          <li><a href="#">Flower Services</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-info">
+        <h2>Why Not Contact Us Today!</h2>
+        <hr />
+        <p>
+          For FlowerBox 360 shoppers, that means not only can you send your
+          friends and loves ones the highest quality flowers found on online,
+          but that you can do so at a great value.
+        </p>
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="telephone">Telephone:</label>
+              <input type="tel" id="telephone" name="telephone" />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject:</label>
+              <input type="text" id="subject" name="subject" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+          </div>
+
+          <div class="form-row">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="store-info">
+        <h2>FlowerBox 360 Info!</h2>
+        <p>
+          Operating Hours:<br />
+          Monday-Friday: 9:00am-5:00pm<br />
+          Saturday: 9:00am-1:00pm<br />
+          Sunday: Closed
+        </p>
+        <p>Order Online 24/7</p>
+        <address>
+          FlowerBox Shipping Dept.<br />
+          Information Technology Faculty<br />
+          12 Nguyen Van Bao St., Ward 4, Go Vap District<br />
+          Phone: (028) 3940 9940
+        </address>
+      </section>
+
+      <aside>
+        <h2>Discounts & Specials</h2>
+        <hr style="border: 1px dashed black" />
+        <img src="./img/rose.png" alt="" style="width: 80%" />
+        <p>
+          FlowerBox 360 offers many great discounts throughout the year, from
+          coupons and promo codes to promo codes and other savings. We also
+          offer military discounts to our wonderful troops!
+        </p>
+        <a href="#">Read More>></a>
+      </aside>
+    </main>
+
+    <footer>
+      <p>
+        Copyright © 2017 - All Rights Reserved - Software Engineering
+        Department, Industrial University of Ho Chi Minh City
+      </p>
+    </footer>
+  </body>
+</html>
