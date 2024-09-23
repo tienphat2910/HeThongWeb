@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #b5651d;
+    color: white;
+    /* padding: 10px; */
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    text-shadow: -5px -3px 5px #fff;
+    text-align: left;
+    padding: 8px 34px;
+    color: green;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    justify-content: flex-start;
+    background-color: #fff;
+    border-top: 1px solid black;
+    padding: 5px 15px;
+    border-bottom: 1px solid black;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
+
+.banner {
+    background-image: url('./line.png');
+    height: 150px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.signup {
+    text-align: left;
+    margin: 20px;
+    border-right: 1px solid #ccc;
+}
+
+
+.signup .philosophy {
+    font-style: italic;
+    color: #697e0b;
+    margin-left: 35px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+}
+
+form input:focus {
+    border-bottom: 2px solid #2b8b13;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #697e0b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: -50%;
+}
+
+form button:hover {
+    background-color: #A0522D;
+}
+
+
+.links {
+    background-color: #e4bb89;
+    padding: 15px;
+    width: 264px;
+    margin: 20px auto;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+}
+
+.links h3 {
+    margin-top: 0;
+    color: #8B4513;
+
+}
+
+.links ul {
+    /* list-style: none; */
+    padding: 0 43px;
+    list-style: square;
+    color: #8B4513;
+
+}
+
+.links ul li {
+    margin: 5px 0;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: #8B4513;
+}
+
+.more-info {
+    /* background-color: #f9f1e7; */
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+.more-info h3 {
+    margin-top: 0;
+    color: #8B4513;
+    text-align: left;
+}
+
+.more-info p {
+    line-height: 26px;
+    text-align: left;
+
+}
+
+footer {
+    text-align: center;
+    background-color: #b5651d;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    /* position: fixed; */
+    bottom: 0;
+    width: 900px;
+    background: url("./footer.png");
+}
