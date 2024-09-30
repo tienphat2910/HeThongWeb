@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Signup Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <div class="card">
+        <div class="card-body">
+          <form>
+            <div class="row">
+              <!-- Cột bên trái -->
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="username" class="form-label">Username*</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    placeholder="Choose your username"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">E-mail*</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Your current email address"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password*</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Create a password"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="fullname" class="form-label">Full name*</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fullname"
+                    placeholder="Your first name and last name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Gender*</label><br />
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      id="male"
+                      value="male"
+                      required
+                    />
+                    <label class="form-check-label" for="male">Male</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      id="female"
+                      value="female"
+                      required
+                    />
+                    <label class="form-check-label" for="female">Female</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Cột bên phải -->
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="company" class="form-label">Company name*</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="company"
+                    placeholder="Your company name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="category" class="form-label">Category*</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="category"
+                    placeholder="Skills category"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="contact" class="form-label"
+                    >Contact number*</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="contact"
+                    placeholder="Provide your number"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="location" class="form-label"
+                    >Your Location*</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="location"
+                    placeholder="Your Pincode and City"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="text-end mb-3">
+              <div class="form-check d-inline-block">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="terms"
+                  required
+                />
+                <label class="form-check-label" for="terms"
+                  >Agree with the terms and conditions</label
+                >
+              </div>
+              <div class="mt-5">
+                <button type="submit" class="btn btn-primary">Signup</button>
+                <span class="mx-2">or</span>
+                <button type="button" class="btn btn-info">
+                  Sign Up with Facebook
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

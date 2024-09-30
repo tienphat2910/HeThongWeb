@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .product-description {
+            color: gray;
+            font-size: 0.9em; 
+        }
+        .form-control {
+            height: 35px; 
+        }
+        .checkout-card {
+            background-color: #bdf2f8; 
+        }
+        .credit-card-section {
+            background-color: white; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <!-- Checkout Section -->
+        <div class="card checkout-card">
+            <div class="card-body">
+                <h5 class="card-title">Checkout</h5>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <p>Product 1</p>
+                        <small class="product-description">Lorem ipsum dolor sit amet.</small>
+                    </div>
+                    <p>$200</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <p>Product 2</p>
+                        <small class="product-description">Consectetur adipiscing elit.</small>
+                    </div>
+                    <p>$120</p>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between font-weight-bold">
+                    <p>Total</p>
+                    <p>$320</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Credit Card Details Section -->
+        <div class="card mt-4 credit-card-section">
+            <div class="card-body">
+                <h5 class="card-title">Credit Card Details</h5>
+                <form>
+                    <div class="form-group">
+                        <label for="cardHolder">Card Holder</label>
+                        <input type="text" class="form-control" id="cardHolder" placeholder="Card Holder">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="cardNumber">Card Number</label>
+                            <input type="text" class="form-control" id="cardNumber" placeholder="Card Number">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="expMonth">Expiration Date</label>
+                            <input type="text" class="form-control" id="expMonth" placeholder="MM">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="expYear">&nbsp;</label>
+                            <input type="text" class="form-control" id="expYear" placeholder="YY">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvc">CVC</label>
+                        <input type="text" class="form-control" id="cvc" placeholder="CVC">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Proceed</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
